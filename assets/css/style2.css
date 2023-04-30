@@ -1,0 +1,235 @@
+/* Dark Mode */
+@font-face {
+    font-family: ethnocentric;
+    src: url(/assets/fonts/ethnocentric-rg.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* colors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+  }
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+:root {
+    --bg-color:#000000;
+    --text-color:#FFFFFF;
+    --yello-color:#FFF500;
+    --pink-color:#FA00FF;
+}
+
+body {
+    position: absolute;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.wrapper {
+    position: relative;
+    display: contents;
+}
+
+
+.nav .navbar {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10001;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    background: var(--bg-color);
+}
+
+.nav .navbar ul {
+    right: 0;
+    left: -60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    position: relative;
+}
+
+.nav .navbar ul li {
+    list-style: none;
+}
+
+.nav .navbar ul li a {
+    list-style: none;
+}
+
+.nav .navbar ul li i {
+    top: 38px;
+    font-size: 37px;
+}
+
+header .nav .navbar .logo img{
+    width: 177px;
+    top: 0px;
+    position: relative;
+    padding: 0px;
+    left: 100px;
+    height: 95px;
+    object-fit: cover;
+}
+
+/* Buttons */
+
+.btn a{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn.yellow-border-box a {
+    --b: 2px;
+    --c: var(--yello-color);
+    --w: 20px;
+    border: var(--b) solid #0000;
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    --end:conic-gradient(from 90deg at top var(--b) left var(--b),var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b),var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    background: var(--end);
+    color: var(--text-color);
+    width: 175px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: -5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.btn.yellow-border-box a:hover {
+    color: var(--bg-color);
+    background: var(--yello-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn.yellow-background-box a{
+    margin-top: -9px;
+    padding: 18px 50px;
+    display: flex;
+    text-align: center;
+    background: var(--yello-color);
+    height: 60px;
+    width: 149px;
+    color: var(--bg-color);
+    transition: background 0.3s;
+}
+
+.btn.yellow-background-box a:hover {
+    --b: 2px;
+    --c: var(--yello-color);
+    --w: 20px;
+    border: var(--b) solid #0000;
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    --end:conic-gradient(from 90deg at top var(--b) left var(--b),var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b),var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    background: var(--end);
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.btn.yellow-background-box-home a {
+    margin-top: 0px;
+    padding: 22px 43px;
+    display: flex;
+    text-align: center;
+    background: var(--yello-color);
+    height: 64px;
+    width: 171px;
+    color: var(--bg-color);
+}
+
+.btn.yellow-background-box-home a:hover {
+    --b: 2px;
+    --c: var(--yello-color);
+    --w: 20px;
+    border: var(--b) solid #0000;
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    --end:conic-gradient(from 90deg at top var(--b) left var(--b),var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b),var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    background: var(--end);
+    color: var(--text-color);
+    margin: -5px;
+    transition: color 0.3s;
+}
+
+.btn.yellow-border-box-home a  {
+    --b: 2px;
+    --c: var(--yello-color);
+    --w: 20px;
+    border: var(--b) solid #0000;
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background: conic-gradient(from 90deg at top var(--b) left var(--b),var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b),var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    width: 164px;
+    height: 64px;
+    box-sizing: border-box;
+    margin: 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.homebtn {
+    margin: 0;
+    width: 216px;
+}
+
+/* Buttons End */
+
+/* Home */
+
+.home {
+    display: flex;
+    position: absolute;
+    top: 159px;
+    left: 69px;
+}
+
+.home .servers .circle {
+    margin: 50px;
+}
+
+.home .servers .circle
+
+.home .servers .circle.main {
+    content: url(/assets/img/serverlogo.svg);
+}
+
+.wrapper .big-cross3 {
+    content: url(/assets/img/White/Icons/big-cross.svg);
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    display: inline-flex;
+    animation:  myAnim6 2s ease-in-out 4s infinite alternate-reverse both;
+}
+
+.home .songs {
+    background: var(--text-color);
+    padding: 10px 10px 10px 10px;
+}
